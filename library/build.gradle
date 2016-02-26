@@ -32,9 +32,9 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
-            pom.version = '0.0.3'
+            pom.version = '0.0.1'
             pom.groupId = 'lib.notification.vantrung.co.vn'
-            pom.artifactId = 'filer-common-library'
+            pom.artifactId = 'notification-library'
         }
     }
 }
