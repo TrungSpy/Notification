@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import lib.notification.vantrung.co.vn.Notification;
+//import lib.notification.vantrung.co.vn.Notification;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        Notification.showNotification(getApplicationContext());
+//        Notification.showNotification(getApplicationContext());
 
         }
 
