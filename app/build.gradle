@@ -19,16 +19,16 @@ android {
     }
 }
 repositories {
-    flatDir {
-        dirs 'libs'
-    }
-//    maven { url 'http://raw.github.com/TrungSpy/Notification/master/repository/' }
+//    flatDir {
+//        dirs 'libs'
+//    }
+    maven { url 'http://raw.github.com/TrungSpy/Notification/master/repository/' }
 }
 
 
 dependencies {
-    compile(name: 'library-release', ext: 'aar')
-//    compile 'lib.notification.vantrung.co.vn:notification-library:0.0.2'
+//    compile(name: 'library-release', ext: 'aar')
+    compile 'lib.notification.vantrung.co.vn:notification-library:0.0.2'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
