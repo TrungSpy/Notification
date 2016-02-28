@@ -1,8 +1,8 @@
-# Notification
-1.Create a widget
-2.Click on the button of the widget, the widget view will be refreshed and send the notification.
+## Notification  
+1.Create a widget  
+2.Click on the button of the widget, the widget view will be refreshed and send the notification.   
 
-https://github.com/TrungSpy/Notification/blob/master/device-2016-02-28-214719.png
+<img src="https://github.com/TrungSpy/Notification/blob/master/device-2016-02-28-214719.png">
 
 
 # How to add my maven repository to build.gradle
