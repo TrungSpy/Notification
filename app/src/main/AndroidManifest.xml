@@ -18,6 +18,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:icon="@mipmap/ic_launcher"
+            android:label="Sample Widget"
+            android:name="lib.notification.vantrung.co.vn.widget.WidgetProvider" >
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <service android:name="lib.notification.vantrung.co.vn.widget.UpdateWidgetService"/>
     </application>
 
 </manifest>

@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-//import lib.notification.vantrung.co.vn.Notification;
+import lib.notification.vantrung.co.vn.Notification;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-//        Notification.showNotification(getApplicationContext());
 
+        showNotification(this.getApplicationContext());
         }
 
     @Override
@@ -53,5 +53,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showNotification(Context context) {
+        Notification notification = new Notification(context);
+        notification.setmIconId(R.mipmap.ic_launcher);
+        notification.setmContentTitle("Notification title");
+        notification.setmContentText("Widget_Library content");
+        notification.setmSubText("Widget_Library sub");
+        notification.setmInfo("Information");
+
+        long now = System.currentTimeMillis();
+        long interval = 10000l;
+        notification.setmWhen(now + interval);
+
+        notification.showNotification();
     }
 }
